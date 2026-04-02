@@ -113,7 +113,7 @@ address {
   justify-content: space-between;
   align-items: center;
   color: #fff;
-  word-spacing: 23px;
+  word-spacing: 19px;
 }
 
 .cover__description-text {
@@ -260,18 +260,20 @@ address {
 }
 
 .footer {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr  1fr;
   min-height: 180px;
   padding: 0 50px;
-  justify-content: space-between;
 }
 
 .footer__address{
     max-width: 260px;
+    justify-self: start;
 }
 
 .footer__menu {
     padding-top: 2px;
+    justify-self: center;
 }
 
 .footer__menu-link {
@@ -294,6 +296,7 @@ address {
   width: 240px;
   height: 48px;
   list-style: none;
+  justify-self: end;
 }
 
 .footer__social-icon {
